@@ -1,0 +1,68 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+body {
+    background-color: white
+}
+.mega-container{
+    display: grid;
+    grid-template-rows: 10% 1fr 1fr 10%; 
+    grid-template-columns: 5% 15% 30% 30% 15% 5%;
+    justify-content: center;
+}
+
+.header-container{
+    display: grid;
+    grid-row-start: 2;
+    grid-column: 2 / span 4;
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+    .profile-pic {
+        justify-self: center;
+    }
+
+    .header-text {
+        justify-self: center;
+    }
+
+.main-container{
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: 2 / span 4;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    gap: 10px 10px;
+    border-radius: 5px;
+}
+
+.card{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bio2 {
+    grid-area: 1 / 2 / 2 / 4;
+    justify-self: center;
+}
+
+.repositories {
+    grid-area: 2 / 2 / 3 / 3
+}
+
+.followers {
+    grid-area: 2 / 3 / 3 / 4
+}
+
+.github-stars {
+    grid-area: 3 / 2 / 4 / 3
+}
+
+.following {
+    grid-area: 3 / 3 / 4 / 4
+}
